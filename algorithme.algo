@@ -1,0 +1,23 @@
+ALGORITHM algorithm_name
+VAR
+    voy=0;
+    words=0;
+    leng=0;
+    c:CHAR;
+    str:STRING
+
+BEGIN
+WHILE (c != ".") DO
+    write("donner un caractère :")
+    read(c)
+    leng=leng+1
+    str = str + c
+    IF (c = " ") THEN
+         words = words + 1
+    END_IF
+   IF (c = "A" OR c = "a" OR c = "E" or c = "e" OR c = "U" OR c = "u" OR C = "I" OR c = "i" OR c = "O" OR c = "o") THEN
+       voy =  voy + 1
+   END_IF 
+   
+END_WHILE   
+END
